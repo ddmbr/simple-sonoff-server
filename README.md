@@ -8,4 +8,4 @@ Long-press the button on Sonoff so that the LED flashes fast. Sonoff will create
 
 # Controlling Sonoff
 
-Run `sonoff-server.py`. Your sonoff should be set up in around 10 seconds. After that, do a GET request to `https://IP:port/command_on` or `https://IP:port/command_off`. You may run it using a browser or just curl (e.g., `curl https://IP:port/command_on`).
+Run `sonoff-server.py`. Your sonoff should be set up in around 10 seconds. After that, do a GET request to `https://IP:port/command_on` or `https://IP:port/command_off`. You may run it using a browser or just curl (e.g., `curl -k https://IP:port/command_on`).
