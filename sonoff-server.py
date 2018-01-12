@@ -50,7 +50,6 @@ class SocketHandler(tornado.websocket.WebSocketHandler):
             sessions.remove(self)
 
 application = tornado.web.Application([
-    (r'/', getToken),
     (r'/dispatch/device', dispatchDeviceHandler),
     (r'/api/ws', SocketHandler),
     (r'/command_on', CommandOnHandler),
